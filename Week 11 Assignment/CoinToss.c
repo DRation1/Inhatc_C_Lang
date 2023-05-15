@@ -28,7 +28,7 @@ int main()
 
 int coinToss()
 {
-    int head = rad() % 2; //0 또는 1을 대입하는 난수 생성기 
+    int head = rand() % 2; //0 또는 1을 대입하는 난수 생성기 
     return head; //생성값 변환
 }
 
