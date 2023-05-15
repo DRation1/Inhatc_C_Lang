@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include <time.h> //시간/날자 관련 함수 헤더
+#include <stdlib.h> //표준 유틸리티 함수 헤더
 
 int coinToss(void);
 
