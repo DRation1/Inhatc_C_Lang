@@ -5,9 +5,29 @@ int solution(char shirtSize[], int shirtSizeLen)
     int* answer = (int*)malloc(sizeof(int)*6);
     for(int i = 0; i < shirtSizeLen; i++)
     {
-        if(shirtSize[i] == 'XS') //strcmp 사용, 비교 후, answer 배열에 해당되는 인덱스 증감
+        if(strcmp(shirtSize[i], "XS") == 0)
         {
-            answer[i] += 1;
+            answer[0]++;
+        }
+        else if(strcmp(shirtSize[i], "S") == 0)
+        {
+            answer[1]++;
+        }
+        else if(strcmp(shirtSize[i], "M") == 0)
+        {
+            answer[2]++;
+        }
+        else if(strcmp(shirtSize[i], "L") == 0)
+        {
+            answer[3]++;
+        }
+        else if(strcmp(shirtSize[i], "XL") == 0)
+        {
+            answer[4]++;
+        }
+        else if(strcmp(shirtSize[i], "XXL") == 0)
+        {
+            answer[5]++;
         }
         
 
